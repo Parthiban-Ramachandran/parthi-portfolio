@@ -1,0 +1,171 @@
+body{
+  background-color: #f6f7ff !important;
+font-family: "poppins";
+}
+
+p{
+  margin-bottom: 0px !important;
+}
+
+.shadow_{
+  box-shadow: 0 6px 15px 0 rgba(74,99,231,.1);
+  background-color: #fff;
+}
+
+.card-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-title:after {
+  content: "";
+  background: #ff5959;
+  border-radius: 25px;
+  display: block;
+  height: 5px;
+  margin-top: 14px;
+  width: 30px;
+}
+
+.hello-text{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about-me .description{
+  color: #888;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.btn-blue{
+  background-color: #4a63e7;
+}
+
+.btn-red{
+  background-color: #ff5959;
+}
+
+.btn-red,.btn-blue{
+  color: #fff;
+  transform: translateY(0);
+  transition: all .3s ease-in-out;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.skills-list p,.projects li,.timeline p,.timeline .date{
+  font-size: 14px;
+  color: #888;
+}
+
+.personal-details .key{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.personal-details .value{
+  font-size: 14px;
+  color: #888;
+}
+
+.timeline {
+  position: relative;
+  padding: 70px 0px 0px 0px;
+}
+
+.entry {
+  clear: both;
+  position: relative;
+}
+
+.entry .title {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+
+.entry .title:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ff5959;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 4.5px;
+  top: 15%;
+  right: -8px;
+  z-index: 1;
+}
+
+.entry .body {
+  margin: 0 0 6em;
+  float: right;
+  width: 80%;
+  padding-left: 60px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: calc(20% + 2px);
+  bottom: 0;
+  width: 1px;
+  background: #ff5959;
+}
+
+  .timeline-line:after, .timeline-line:before {
+    content: "";
+    display: block;
+    border-radius: 100%;
+    background: #ff5959;
+    position: absolute;
+    left: -3px;
+    height: 7px;
+    width: 7px;
+}
+
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h4 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin: 20px 0;
+}
+
+.tools-list p{
+  color: #888;
+  font-size: 14px;
+}
+
+.tools-list .card{
+  border-color: #efefef !important;
+}
+
+.tools-list .card:hover{
+  background-color: #ff5959;
+  color: white;
+}
+
+@media (max-width: 567px) {
+  .entry .body {
+    margin: 0 0 3em;
+    float: right;
+    width: 80%;
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .btn-red,.btn-blue{
+    width: 100%;
+  }
+}
